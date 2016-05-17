@@ -1,0 +1,124 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+input:active,
+input:focus{
+	outline: none
+}
+
+header{
+    position: fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height: 50px;
+	background: #ffffff;
+	background-color: rgb(255,255,255);
+	box-sizing: border-box;
+}
+header{
+	position: fixed;
+	top:0;
+	left: 0;
+	width: 100%;
+	/*height: 1rem;*/
+	height: 50px;
+	/*border-bottom: 2px solid #999999; */
+	background: #ffffff;
+	background-color: rgb(255,255,255);
+	box-sizing: border-box;
+}
+header .center{
+	margin:0 50px;
+	text-align: center;
+	height: 50px;
+	line-height: 50px;
+}
+header .center span{
+	font-size:18px;
+	color:#7d7d7d;
+}
+
+/***************/
+.container{
+    padding-top: 50px;
+}
+.container .logo {
+    width:100%;
+    height: 80px;
+    background-image: url(../../images/Money_128.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 56px auto;
+}
+.container .text{
+	text-align: center;
+	color: #999999;
+	font-size: 14px;
+}
+.container .subtext {
+    text-align: center;
+    color: #999999;
+    font-size: 14px;
+	line-height: 18px;
+    margin: 10px 20px;
+}
+
+/********************/
+
+.form{
+	margin-top:15px;
+	border-top: 1px solid #e5e5e5;
+	border-bottom: 1px solid #e5e5e5;
+}
+.input-group + .input-group{
+	border-top: 1px solid #e5e5e5;
+}
+.input-group{
+	height: 40px;
+}
+.input-group label{
+	display: inline-block;
+	width:50px;
+	height: 40px;
+	float: left;
+}
+
+.input-group label.icon-lock,
+.input-group label.icon-phone{
+	background-repeat: no-repeat;
+	background-position:center;
+	background-size: 15px auto;
+}
+.input-group label.icon-phone{
+	background-image: url(../../images/i-phone@3x.png);
+}
+.input-group label.icon-lock{
+	background-image: url(../../images/i-password@3x.png);
+}
+.input-group>div{
+	margin-left: 50px;
+}
+.input-group>div>input{
+	height: 40px;
+	background: transparent;
+	border:0;
+	width: 100%;
+	font-size: 14px;
+	color: black;
+}
+.btn{
+	background: #ff9f00;
+	padding: 10px 0 13px;
+
+	/*height: 40px;*/
+	/*line-height: */
+	font-size: 18px;
+	color: #fff;
+	margin: 20px;
+	text-align: center;
+	border-radius: 5px;
+	/*background-color: rgba(0,0,0,.4);*/
+}

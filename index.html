@@ -5,20 +5,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 
-    <title>记账本</title>
+    <title>简书</title>
 
     <link href="css/style.css" rel="stylesheet" />
 </head>
 
-<body>
-
-    <div ui-view class="fade-in-up"></div>
-
+<body class="page-on-load">
+    <!--<div ng-spinner-bar class="page-spinner-bar">
+        <div class="bounce1"></div>
+        <div class="bounce2"></div>
+        <div class="bounce3"></div>
+    </div>-->
+    <div class="page-wrap" ui-view></div>
+    <div ng-spinner-bar class="loading-z">
+        <div class="spinner">
+            <div class="rect1"></div>
+            <div class="rect2"></div>
+            <div class="rect3"></div>
+            <div class="rect4"></div>
+            <div class="rect5"></div>
+        </div>
+    </div>
+    <!--<script src="//cdn.bootcss.com/jquery/2.2.3/jquery.min.js"></script>-->
     <script src="lib/angularjs/angular.min.js"></script>
     <script src="lib/angularjs/angular-ui-router.min.js"></script>
+    <script src="lib/angularjs/angular-animate.min.js"></script>
     <script src="lib/angularjs/plugins/ocLazyLoad.min.js"></script>
     <script src="app/app.js"></script>
     <script src="app/routes.js"></script>
+    <script src="app/directives.js"></script>
 
     <link id="ng_load_plugins_before" />
 </body>

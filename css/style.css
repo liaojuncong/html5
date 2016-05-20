@@ -1,76 +1,174 @@
 html, body {
-  margin: 0;
-  padding: 0;
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+    line-height: 20px;
 }
 
 input:active, input:focus {
-  outline: none
+    outline: none
 }
 
-header {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 50px;
-  background: #ffffff;
-  background-color: rgb(255, 255, 255);
-  box-sizing: border-box;
+a {
+    color: #555555;
+    text-decoration: none;
 }
 
-header {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  /*height: 1rem;*/
-  height: 50px;
-  /*border-bottom: 2px solid #999999; */
-  background: #ffffff;
-  background-color: rgb(255, 255, 255);
-  box-sizing: border-box;
+a:hover, a:focus {
+    text-decoration: none;
 }
 
-header .center {
-  margin: 0 50px;
-  text-align: center;
-  height: 50px;
-  line-height: 50px;
-}
-
-header .center span {
-  font-size: 18px;
-  color: #7d7d7d;
+a:hover, a:active {
+    outline: 0;
 }
 
 
-/***************/
+/******** Common ********/
 
-.container {
-  padding-top: 50px;
+.pull-right {
+    float: right;
 }
 
-.container .logo {
-  width: 100%;
-  height: 80px;
-  background-image: url(../images/Money_128.png);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 56px auto;
+.navbar {
+    overflow: visible;
+    margin-bottom: 20px;
 }
 
-.container .text {
-  text-align: center;
-  color: #999999;
-  font-size: 14px;
+.shrink {
+    top: 0;
+    left: 0;
+    height: auto;
+    display: block;
+    background: none;
 }
 
-.container .subtext {
-  text-align: center;
-  color: #999999;
-  font-size: 14px;
-  line-height: 18px;
-  margin: 10px 20px;
+.shrink a {
+    background-color: #e78170;
+    text-shadow: 0 1px 0 #b9351f;
+}
+
+.navbar-jianshu {
+    position: fixed;
+    width: 45px;
+    z-index: 1049;
+    -webkit-backface-visibility: hidden;
+}
+
+.navbar-jianshu a {
+    display: block;
+    padding: 10px;
+    font-size: 16px;
+    line-height: 25px;
+    text-align: center;
+}
+
+.navbar-jianshu a.logo {
+    font-size: 18px;
+    color: white;
+}
+
+.dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1000;
+    display: none;
+    float: left;
+    min-width: 160px;
+    padding: 5px 0;
+    margin: 2px 0 0;
+    list-style: none;
+    background-color: white;
+    border: 1px solid #ccc;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    border-radius: 6px;
+    -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    -webkit-background-clip: padding-box;
+    -moz-background-clip: padding;
+    background-clip: padding-box;
+}
+
+.dropdown-menu>li>a {
+    display: block;
+    padding: 3px 20px;
+    clear: both;
+    font-weight: normal;
+    line-height: 20px;
+    color: #3f3f3f;
+    white-space: nowrap;
+}
+
+.shrink .dropdown-menu i {
+    margin-right: 17px;
+}
+
+.navbar-jianshu i {
+    width: 16px;
+    display: inline-block;
+    text-align: center;
+    line-height: 14px;
+}
+
+.dropup, .dropdown {
+    position: relative;
+}
+
+.open>.dropdown-menu {
+    display: block;
+}
+
+.shrink .dropdown-menu {
+    position: fixed;
+    margin-top: 10px;
+    top: 35px;
+    left: 0;
+    padding: 0;
+    border: none;
+    box-shadow: none;
+    z-index: 1000;
+}
+
+.shrink .dropdown-menu li a {
+    padding: 13px 13px 13px 15px;
+    color: white;
+    text-align: left;
+}
+
+@media(max-width: 768px) {
+    .shrink .dropdown-menu {
+        top: 35px;
+        left: 0;
+    }
+}
+
+.navbar-user {
+    top: 0;
+    left: 0;
+    height: 45px;
+    background: white;
+    box-shadow: 0 1px 4px #eeeeee;
+    position: fixed;
+    right: 0;
+    margin-bottom: 0;
+    z-index: 1010;
+}
+
+.navbar-user .login {
+    position: relative;
+    top: 13px;
+    float: right;
+    padding: 0 2px;
+    margin-right: 8px;
+}
+
+.navbar-user .set-view-mode {
+    position: relative;
+    top: 13px;
+    margin-right: 15px;
 }
 
 
@@ -97,7 +195,7 @@ header .center span {
 }
 
 .loading-z {
-  /*display: none;*/
+  display: none;
   position: fixed;
   height: 100%;
   width: 100%;
@@ -341,4 +439,10 @@ UI Loading
 
 .hide {
   display: none!important;
+}
+
+
+.container {
+	padding-top: 45px;
+	text-align: center;
 }

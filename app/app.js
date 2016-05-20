@@ -8,7 +8,11 @@ congApp
             $rootScope.previousParams = fromParams;
             $rootScope.goback = function () {
                 window.history.go(-1);
-            }
+            };
+            $rootScope.openDropdown = function () {
+                $(this).addClass()
+            };
+            
         });
         $rootScope.$state = $state; // state to be accessed from view
     }])

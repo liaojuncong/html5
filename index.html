@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html ng-app="CongApp">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+    <title>简书</title>
+    <link href="//cdn.bootcss.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" />
+    <link href="css/style.css" rel="stylesheet" />
+</head>
+
+<body class="page-on-load">
+    <!--<div ng-spinner-bar class="page-spinner-bar">
+        <div class="bounce1"></div>
+        <div class="bounce2"></div>
+        <div class="bounce3"></div>
+    </div>-->
+    <header>
+        <div class="navbar navbar-jianshu shrink">
+            <div ng-dopdown class="dropdown">
+                <a class="dropdown-toggle logo" id="dLabel" role="button" data-toggle="dropdown" data-target="#" href="javascript:void(0)">
+                简
+            </a>
+                <ul class="dropdown-menu" role="menu" aria-labelledby="dLabel">
+                    <li><a ui-sref="dashboard" href="javascript:void(0)"><i class="fa fa-home"></i> 首页</a></li>
+                    <li><a ui-sref="login" href="javascript:void(0)"><i class="fa fa-th"></i> 专题</a></li>
+                    <li><a href="javascript:void(0)"><i class="fa fa-money"></i> 发钱啦</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="navbar-user">
+            <a class="login" href="/sign_up">
+                <i class="fa fa-user"></i> 注册
+            </a>
+            <a ui-sref="login" class="login" href="#">
+                <i class="fa fa-sign-in"></i> 登录
+            </a>
+            <a class="daytime set-view-mode pull-right" href="javascript:void(0)">
+                <i class="fa fa-moon-o"></i>
+            </a>
+        </div>
+    </header>
+    <div class="page-wrap container" ui-view></div>
+    <div ng-spinner-bar class="loading-z">
+        <div class="spinner">
+            <div class="rect1"></div>
+            <div class="rect2"></div>
+            <div class="rect3"></div>
+            <div class="rect4"></div>
+            <div class="rect5"></div>
+        </div>
+    </div>
+    <!--<script src="//cdn.bootcss.com/jquery/2.2.3/jquery.min.js"></script>-->
+    <script src="//cdn.bootcss.com/angular.js/1.5.5/angular.min.js"></script>
+    <script src="//cdn.bootcss.com/angular-ui-router/0.3.0/angular-ui-router.min.js"></script>
+    <script src="//cdn.bootcss.com/angular.js/1.5.5/angular-animate.js"></script>
+    <script src="//cdn.bootcss.com/oclazyload/1.0.9/ocLazyLoad.min.js"></script>
+    <script src="app/app.js"></script>
+    <script src="app/routes.js"></script>
+    <script src="app/directives.js"></script>
+
+    <link id="ng_load_plugins_before" />
+</body>
+
+</html>

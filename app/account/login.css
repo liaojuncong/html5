@@ -1,0 +1,112 @@
+.login-page > .logo {
+	width: 100%;
+	height: 180px;
+}
+
+.login-page > .logo .title {
+	text-align: center;
+	color: #e78170;
+	font-size: 76px;
+	width: 100%;
+	height: 150px;
+	line-height: 150px;
+}
+
+.login-page > .logo .subtitle {
+	text-align: center;
+	color: #e78170;
+	font-size: 26px;
+	width: 100%;
+	height: 30px;
+	line-height: 30px
+}
+
+.login-page > .title {
+	margin: 30px auto 50px;
+	border-bottom: 1px solid #eeeeee;
+	color: #b1b1b1;
+}
+
+.login-page .title span {
+	position: relative;
+	top: 10px;
+	padding: 0 30px;
+	background: white;
+}
+
+.login-page .text {
+	text-align: center;
+	color: #999999;
+	font-size: 14px;
+}
+
+.login-page .subtext {
+	text-align: center;
+	color: #999999;
+	font-size: 14px;
+	line-height: 18px;
+	margin: 10px 20px;
+}
+
+
+/********************/
+
+.form {
+	margin: 15px 50px 15px 50px;
+	border: 1px solid #e5e5e5;
+}
+
+.input-group + .input-group {
+	border-top: 1px solid #e5e5e5;
+}
+
+.input-group {
+	height: 40px;
+}
+
+.input-group label {
+	display: inline-block;
+	width: 50px;
+	height: 40px;
+	float: left;
+}
+
+.input-group label.icon-lock, .input-group label.icon-phone {
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 15px auto;
+}
+
+.input-group label.icon-phone {
+	background-image: url(../../images/i-phone@3x.png);
+}
+
+.input-group label.icon-lock {
+	background-image: url(../../images/i-password@3x.png);
+}
+
+.input-group>div {
+	margin-left: 50px;
+}
+
+.input-group>div>input {
+	height: 40px;
+	background: transparent;
+	border: 0;
+	width: 100%;
+	font-size: 14px;
+	color: black;
+}
+
+.btn {
+	background: #e78170;
+	padding: 10px 0 13px;
+	/*height: 40px;*/
+	/*line-height: */
+	font-size: 18px;
+	color: #fff;
+	margin: 15px 50px 15px 50px;
+	text-align: center;
+	border-radius: 5px;
+	/*background-color: rgba(0,0,0,.4);*/
+}
